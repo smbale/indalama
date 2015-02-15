@@ -50,6 +50,7 @@ function get($uri)
         }
         return $response;
     }
+$amounttest=0.001;
 
 $msg=$_POST["Body"];
 list($phone,$amount)=split(' ', $msg);
@@ -58,11 +59,20 @@ echo 'Msg received: ' . $msg;
 echo 'Phone: ' . $phone;
 echo 'amount:' . $amount;
 
-$secretkey="sn3nxiW7v8KXzPzAqzyHXbSSKNuN9";
-$amount=1;
-$issueraddress="rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn";
-$srcaddress="rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn";
-$dstaddress="ra5nK24KXen9AHvsdFTKHSANinZseWnPcX";
+
+$amount_hack=0.0001;
+
+
+$secretkeytest="snqfugX7TaCgRW9mQFX9SLD358Moh";
+$issueraddress="rPmrqFdnzQ8q6E9AmRWJb1HLLCeoZSntS3";//David
+$dstaddress="rPrkUGPVvS6Gji5e6FrA1gh7S8gUL3wXMk"; //Simon GBP
+$srcaddress="rNAZFtFfeKofrA4JeDMjnrmMkRpN5NstuE";//Andres INR
+
+$dstaddresstest="ra5nK24KXen9AHvsdFTKHSANinZseWnPcX";
+$issueraddresstest="rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn";
+$srcaddresstest="rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn";
+$secretkeytest="sn3nxiW7v8KXzPzAqzyHXbSSKNuN9";
+
 
 $id=get("https://api.ripple.com/v1/uuid");
 
@@ -71,25 +81,36 @@ echo $id['uuid'];
 
 //Rs
 
-$preparehack=get("https://api.ripple.com/v1/accounts/$dstaddress/payments/paths/$scraddress/$amount+USD+$issueraddress?source_currencies=USD");
+$preparehack=get("https://api.ripple.com/v1/accounts/$dstaddress/payments/paths/$srcaddress/$amount_hack+INR+$issueraddress?source_currencies=GBP");
 
 $hack2=json_decode($preparehack,true);
 
 echo hack2;
 print_r($hack2);
 
-$value=$hack2["payments"][0]["destination_amount"]["value"];
+$value=$hack2["payments"][0]["source_amount"]["value"];
+
+$rate=$amount_hack/$value;
+
+echo rate;
+print_r($rate);
+
 
 echo value;
 print_r($value);
 
-$prepare=get("https://api.ripple.com/v1/accounts/$srcaddress/payments/paths/$dstaddress/$amount+USD+$issueraddress?source_currencies=USD");
+$amount2=$amount*$rate;
+
+$prepare=get("https://api.ripple.com/v1/accounts/$dstaddress/payments/paths/$srcaddress/$amounttest+INR+$issueraddress?source_currencies=GBP");
 
 $id2=json_decode($prepare,true);
+
+echo prepare;
 
 print_r($id2);
 
 $paymentdata=$id2["payments"][0];
+
 
 $data=array(
       "secret"=>$secretkey,
@@ -106,6 +127,7 @@ $data=array(
 $out=post("https://api.ripple.com/v1/accounts/$srcaddress/payments?",$data);
 
 print_r($out);
+
 
 ?>
 
