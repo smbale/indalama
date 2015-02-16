@@ -1,5 +1,5 @@
 # ripple-fintech
-
+<a href="http://www.slideshare.net/smbale/zapit-presentation" ><image src="http://cdn.slidesharecdn.com/ss_thumbnails/zapitpresentation-150216103452-conversion-gate01-thumbnail.jpg?cb=1424104501"></a>
 Zapit App developed at FinTechaton 2015 http://www.startupbootcamp.org/fintechathon.html
 
 APIs<p>
