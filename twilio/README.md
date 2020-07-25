@@ -1,6 +1,6 @@
 ## A Brief Introduction
 
-With version 4.0 we've simplified interaction with the Twilio REST API. No more manually creating URLS or parsing XML/JSON. You now interact with resources directly. Follow the [Quickstart Guide](http://readthedocs.org/docs/twilio-php/en/latest/#quickstart) to get up and running right now. The [User Guide](http://readthedocs.org/docs/twilio-php/en/latest/#user-guide) shows you how to get the most out of **twilio-php**.
+With version 3.0 we've simplified interaction with the Twilio REST API. No more manually creating URLS or parsing XML/JSON. You now interact with resources directly. Follow the [Quickstart Guide](http://readthedocs.org/docs/twilio-php/en/latest/#quickstart) to get up and running right now. The [User Guide](http://readthedocs.org/docs/twilio-php/en/latest/#user-guide) shows you how to get the most out of **twilio-php**.
 
 ## Prerequisites
 
