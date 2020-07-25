@@ -13,7 +13,7 @@ Concept<p>
 The app aims to enable transfer of payments on any platform available anywhere in the world in real time
 
 TODO<p>
-UX for indalama at http://ripple-fintech.appspot.com/
+UX for indalama at https://indalama.mpelembe.net/
 
 Voice Recognition using Artificial Intelligence API
 PayID for media content subscription
