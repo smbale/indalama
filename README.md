@@ -1,4 +1,4 @@
-# ripple-fintech
+# ripple-PayID
 <a href="http://www.slideshare.net/smbale/zapit-presentation" ><image src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/162/473/datas/small.jpg"></a>
 Indalama App developed at PayID 2020 https://devpost.com/software/indalama?fbclid=IwAR1nzyc8D0YM9H4OBaPMgdW3poxQCk1HdS2revc66Dee7PRgilCwvdP31GA
 
