@@ -71,9 +71,8 @@ $client = new Services_Twilio($account_sid, $auth_token);
 $secretkey="sn3nxiW7v8KXzPzAqzyHXbSSKNuN9";
 $amount=1;
 $issueraddress="rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn";
-$dstaddress="rNAZFtFfeKofrA4JeDMjnrmMkRpN5NstuE"; //Simon GBP
-$srcaddress="rNAZFtFfeKofrA4JeDMjnrmMkRpN5NstuE";//Andres INR
-
+$dstaddress="rNAZFtFfeKofrA4JeDMjnrmMkRpN5NstuE"; //Mbale GBP
+$srcaddress="rNAZFtFfeKofrA4JeDMjnrmMkRpN5NstuE";//Lawrence ZMK
 $trans=get("https://api.ripple.com/v1/accounts/$dstaddress/payments?direction=incoming&exclude_failed=true");
 
 $out=json_decode($trans,true);
@@ -92,7 +91,7 @@ $phonetest=+447973212148;
 $message = $client->account->sms_messages->create(
               '+441246488197', // From a Twilio number in your account
               $phonetest, // Text any number
-              "Congratulations You have received 1 million ruppees !"
+              "Congratulations You have received 1 million Kwacha !"
             );
            print $message->sid;
 **/
