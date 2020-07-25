@@ -1,6 +1,6 @@
 # ripple-fintech
 <a href="http://www.slideshare.net/smbale/zapit-presentation" ><image src="http://cdn.slidesharecdn.com/ss_thumbnails/zapitpresentation-150216103452-conversion-gate01-thumbnail.jpg?cb=1424104501"></a>
-Zapit App developed at FinTechaton 2015 http://www.startupbootcamp.org/fintechathon.html
+Indalama App developed at PayID 2020 https://devpost.com/software/indalama?fbclid=IwAR1nzyc8D0YM9H4OBaPMgdW3poxQCk1HdS2revc66Dee7PRgilCwvdP31GA
 
 Overview http://www.slideshare.net/smbale/zapit-presentation
 
@@ -16,3 +16,4 @@ TODO<p>
 UX for Zapit at http://ripple-fintech.appspot.com/
 
 Voice Recognition using Artificial Intelligence API
+PayID for media content subscription
