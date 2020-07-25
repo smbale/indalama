@@ -13,7 +13,7 @@ Concept<p>
 The app aims to enable transfer of payments on any platform available anywhere in the world in real time
 
 TODO<p>
-UX for indalama at https://indalama.mpelembe.net/
+UX for indalama at https://indalama.mpelembe.net/<br>
 
-Voice Recognition using Artificial Intelligence API
-PayID for media content subscription
+Voice Recognition using Artificial Intelligence API<br>
+PayID for media content subscription<br>
