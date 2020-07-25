@@ -64,9 +64,9 @@ echo 'amount:' . $amount;
 $amount_hack=0.0001;
 
 $secretkey="snqfugX7TaCgRW9mQFX9SLD358Moh";
-$issueraddress="rPmrqFdnzQ8q6E9AmRWJb1HLLCeoZSntS3";//David
-$dstaddress="rPrkUGPVvS6Gji5e6FrA1gh7S8gUL3wXMk"; //Simon GBP
-$srcaddress="rNAZFtFfeKofrA4JeDMjnrmMkRpN5NstuE";//Andres INR
+$issueraddress="rPmrqFdnzQ8q6E9AmRWJb1HLLCeoZSntS3";//Sam
+$dstaddress="rPrkUGPVvS6Gji5e6FrA1gh7S8gUL3wXMk"; //Mbale GBP
+$srcaddress="rNAZFtFfeKofrA4JeDMjnrmMkRpN5NstuE";//Lawrence ZMK
 
 $dstaddresstest="ra5nK24KXen9AHvsdFTKHSANinZseWnPcX";
 $issueraddresstest="rf1BiGeXwwQoi8Z2ueFYTEXSwuJYfV2Jpn";
@@ -81,7 +81,7 @@ echo $id['uuid'];
 
 //Rs
 
-$preparehack=get("https://api.ripple.com/v1/accounts/$srcaddress/payments/paths/$srcaddress/$amount_hack+INR+$issueraddress?source_currencies=GBP");
+$preparehack=get("https://api.ripple.com/v1/accounts/$srcaddress/payments/paths/$srcaddress/$amount_hack+ZMK+$issueraddress?source_currencies=GBP");
 
 $hack2=json_decode($preparehack,true);
 
