@@ -15,4 +15,4 @@ The app aims to enable transfer of payments on any platform available anywhere i
 TODO<p>
 UX for Zapit at http://ripple-fintech.appspot.com/
 
-Voice Recognition using the BT Future Voice Apha API
+Voice Recognition using Artificial Intelligence API
